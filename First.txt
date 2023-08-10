@@ -1,5 +1,4 @@
 Free text for the first file of line #1
 Free text for the first file of line #2
 Free text for the first file of line #3 
-change on second branch #1 file #1
-change for conflicts 
+CHANGE FOR CONFLICTS LOCAL and change for conflicts = resolved 
