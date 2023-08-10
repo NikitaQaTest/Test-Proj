@@ -1,3 +1,4 @@
 Free text for the second file of line #1
 Free text for the second file of line #2
-Free text for the second file of line #3 first change 
+Free text for the second file of line #3 
+change on second branch #2 file #2
