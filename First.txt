@@ -1,4 +1,7 @@
 Free text for the first file of line #1
 Free text for the first file of line #2
 Free text for the first file of line #3 
-CHANGE FOR CONFLICTS LOCAL and change for conflicts = resolved 
+
+
+
+CHANGE 2 FOR CONFLICTS LOCAL and change for conflicts = resolved 
