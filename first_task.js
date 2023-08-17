@@ -1,11 +1,23 @@
 /* 1. Написати функцію, яка у випадку якщо типи двох аргументів string поверне їх зконкатенований вираз,
 якщо типи двох аргументів number - поверне їх помножене значення
 та у будь якому випадку не співпадіння поверне текст There are no type matches for operation */
-
-function typeChecker(arg1, arg2) {sdfsdfsdf
+   
+function typeChecker(arg1, arg2) {
+    
 // ваш код
-
-
+    switch (typeof arg1) {
+        case 'string':
+            if (typeof arg2 === 'string') {
+                return arg1 + arg2;
+            }
+            break;
+        case 'number':
+            if (typeof arg2 === 'number') {
+                return arg1 * arg2;
+            }
+            break;
+    }
+    return 'There are no type matches for operation';
 }
 
 // Приклад роботи функції:
@@ -16,7 +28,9 @@ console.log(typeChecker(true, 5)); // виведе There are no type matches for
 /* 2. Написати функцію, яка, використовуючи тернарний оператор, виводить у консоль Yes, якщо число
 позитивне, та No якщо воно негативне */
 function isNegative(value) {
-// ваш код
+
+    const result = value > 0 ? "No" : "Yes";
+    console.log(result);
 }
 
 // Приклад роботи функції:
@@ -27,6 +41,9 @@ isNegative(1); // виведе у консоль "No"
 або якщо ні - повертає false */
 function divider(num1, num2) {
 // ваш код
+
+    return num1 % num2 === 0;
+
 }
 
 // Приклад роботи функції:
@@ -37,8 +54,12 @@ console.log(divider(3, 2)); // виведе у консоль false
 перевищує за значенням число 10 */
 function recursiveAddition(value) {
 // ваш код
+if (value <= 10) {
+    console.log(value);
+    recursiveAddition(value + 2);
+    }
+        
 }
-
 // Приклад роботи функції:
 recursiveAddition(5); // виведе в консоль по черзі 5, 7, 9
 recursiveAddition(2); // виведе в консоль по черзі 2, 4, 6, 8, 10
