@@ -33,7 +33,7 @@ function isNegative(value) {
     console.log(result);
 }
 
-// Приклад роботи функції:
+// Приклад роботи функції:ЖЖ
 isNegative(-1); // виведе у консоль "Yes"
 isNegative(1); // виведе у консоль "No"
 
