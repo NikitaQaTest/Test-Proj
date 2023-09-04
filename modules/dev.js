@@ -15,14 +15,12 @@ class Dev extends Employee {
         writable: false,
         value: id,
        });
-
-
     }
   
     getJobType() {
       return `I am a ${this._jobType}`;
     }
-  }
+  
 
 
     // добавил статический метод 
@@ -35,7 +33,8 @@ class Dev extends Employee {
     }
     return devsArray;
   }
-  export { Dev }
+}
+export { Dev }
 
   const newDev = new Dev(1, 3000);
   
