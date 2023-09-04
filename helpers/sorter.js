@@ -1,6 +1,12 @@
 function sortBySalary(employees) {
-    return employees.sort((a, b) => a.salary - b.salary);
+  return employees.sort((a, b) => {
+    if (a.salary !== b.salary) {
+      return a.salary - b.salary;
+    } else {
+      return a.id - b.id;
+    }
+  });
   }
 
 
-export { sortBySalary };
+export default { sortBySalary };

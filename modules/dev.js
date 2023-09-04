@@ -24,6 +24,17 @@ class Dev extends Employee {
     }
   }
 
+
+    // добавил статический метод 
+  static returnArrayOfDevs(...devs) {
+    const devsArray = [];
+    for (const dev of devs) {
+      if (dev instanceof Dev) {
+        devsArray.push(dev);
+      }
+    }
+    return devsArray;
+  }
   export { Dev }
 
   const newDev = new Dev(1, 3000);
